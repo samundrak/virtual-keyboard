@@ -11,6 +11,7 @@ const StyledApp = styled.div`
   grid-template-columns: 90% 10%;
   margin: auto;
   padding: 10px;
+  grid-row-gap: 10px;
 `;
 const GridItem = styled.div`
   grid-area: ${(props) => props.area};

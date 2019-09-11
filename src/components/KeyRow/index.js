@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div``;
 
-const KeyRow = ({ keys }) => {
-  return <div>HEllo world</div>;
+const KeyRow = ({ children }) => {
+  return <div>{children}</div>;
 };
 export default KeyRow;
