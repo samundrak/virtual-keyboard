@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import Screen from './components/Screen';
+import Keyboard from './components/Keyboard';
+import CopyButton from './components/CopyButton';
 
+const StyledApp = styled.div`
+  display: grid;
+  grid-template-areas: 'screen copybutton' 'keyboard keyboard';
+  grid-template-columns: 90% 10%;
+  margin: auto;
+  padding: 10px;
+`;
+const GridItem = styled.div`
+  grid-area: ${(props) => props.area};
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledApp className="App">
+      <GridItem area="screen">
+        <Screen />
+      </GridItem>
+      <GridItem area="keyboard">
+        <Keyboard />
+      </GridItem>
+      <GridItem area="copybutton">
+        <CopyButton />
+      </GridItem>
+    </StyledApp>
   );
 }
 
