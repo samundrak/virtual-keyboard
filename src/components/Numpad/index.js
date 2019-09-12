@@ -7,11 +7,13 @@ const Wrapper = styled.div`
   display: grid;
   grid-auto-flow: row;
   padding: 10px;
+  grid-row-gap: 1px;
 `;
 const GridRow = styled.div`
+  grid-column-gap: 1px;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(1f);
+  grid-template-columns: repeat(4, 1fr);
 `;
 const Numpad = ({ keys }) => {
   return (
@@ -22,7 +24,7 @@ const Numpad = ({ keys }) => {
             Array.isArray(item) ? (
               <Multikey key={index} keys={item} />
             ) : (
-              <Key id={item.id || item.label} label={item.label} key={index} />
+              <Key {...item} id={item.id || item.label} key={index} />
             ),
           )}
         </GridRow>

@@ -14,6 +14,7 @@ const Grid = styled.div`
   border-radius: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  grid-template-columns: 60% 15% 25%;
   grid-template-areas:
     'function function function'
     'alphanumeric controlpad numpad'

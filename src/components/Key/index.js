@@ -11,7 +11,17 @@ const Button = styled.div`
   cursor: pointer;
 `;
 
-const Key = ({ id, label }) => {
-  return <Button>{label}</Button>;
+const makeCustomStyles = props => {
+  const style = {};
+  if (props.rowSpan) {
+    style.gridRow = `span ${props.rowSpan}`;
+  }
+  if (props.colSpan) {
+    style.gridColumn = `span ${props.colSpan}`;
+  }
+  return style;
+};
+const Key = ({ id, label, ...rest }) => {
+  return <Button style={makeCustomStyles(rest)}>{label}</Button>;
 };
 export default Key;

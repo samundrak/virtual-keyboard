@@ -7,11 +7,13 @@ const Wrapper = styled.div`
   display: grid;
   grid-auto-flow: row;
   padding: 10px;
+  grid-row-gap: 1px;
 `;
 const GridRow = styled.div`
+  grid-column-gap: 1px;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(1f);
+  grid-template-columns: repeat(3, 1fr);
 `;
 const ArrowPad = ({ keys }) => {
   return (
