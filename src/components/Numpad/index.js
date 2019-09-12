@@ -18,14 +18,14 @@ const GridRow = styled.div`
 const Numpad = ({ keys }) => {
   return (
     <Wrapper>
-      {Object.keys(keys).map(key => (
+      {Object.keys(keys).map((key) => (
         <GridRow key={key}>
           {keys[key].map((item, index) =>
             Array.isArray(item) ? (
               <Multikey key={index} keys={item} />
             ) : (
               <Key {...item} id={item.id || item.label} key={index} />
-            ),
+            )
           )}
         </GridRow>
       ))}

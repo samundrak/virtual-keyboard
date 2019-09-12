@@ -183,7 +183,7 @@
     ]
   },
   "arrowPad": {
-    "seg1": [{ "label": "Up" }],
+    "seg1": [{ "label": "Up", "columnStart": 2 }],
     "seg2": [{ "label": "<-" }, { "label": "Down" }, { "label": "->" }]
   },
   "numPad": {
@@ -193,12 +193,7 @@
       { "label": "*" },
       { "label": "-" }
     ],
-    "seg2": [
-      { "label": 7 },
-      { "label": 8 },
-      { "label": 9 },
-      { "label": "+", "rowSpan": 2 }
-    ],
+    "seg2": [{ "label": 7 }, { "label": 8 }, { "label": 9 }, { "label": "+" }],
     "seg3": [{ "label": 4 }, { "label": 5 }, { "label": 6 }],
     "seg4": [{ "label": 1 }, { "label": 2 }, { "label": 3 }],
     "seg5": [

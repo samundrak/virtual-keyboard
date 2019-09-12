@@ -24,7 +24,7 @@ const ArrowPad = ({ keys }) => {
             Array.isArray(item) ? (
               <Multikey key={index} keys={item} />
             ) : (
-              <Key id={item.id || item.label} label={item.label} key={index} />
+              <Key {...item} id={item.id || item.label} key={index} />
             )
           )}
         </GridRow>

@@ -12,12 +12,16 @@ const Button = styled.div`
 `;
 
 const makeCustomStyles = (props) => {
+  console.log(props);
   const style = {};
   if (props.rowSpan) {
     style.gridRow = `span ${props.rowSpan}`;
   }
   if (props.colSpan) {
     style.gridColumn = `span ${props.colSpan}`;
+  }
+  if (props.columnStart) {
+    style.gridColumnStart = props.columnStart;
   }
   return style;
 };
