@@ -1,0 +1,200 @@
+{
+  "fn": {
+    "seg1": [
+      {
+        "id": "esc",
+        "label": "Esc",
+        "group": "seg1"
+      }
+    ],
+    "seg2": [
+      {
+        "group": "seg2",
+        "id": "f1",
+        "label": "F1"
+      },
+      {
+        "group": "seg2",
+        "id": "f2",
+        "label": "F2"
+      },
+      {
+        "group": "seg2",
+        "id": "f3",
+        "label": "F3"
+      },
+      {
+        "group": "seg2",
+        "id": "f4",
+        "label": "F4"
+      }
+    ],
+    "seg3": [
+      {
+        "group": "seg3",
+        "id": "f5",
+        "label": "F5"
+      },
+      {
+        "group": "seg3",
+        "id": "f6",
+        "label": "F6"
+      },
+      {
+        "group": "seg3",
+        "id": "f7",
+        "label": "F7"
+      },
+      {
+        "group": "seg3",
+        "id": "f8",
+        "label": "F8"
+      }
+    ],
+    "seg4": [
+      {
+        "group": "seg4",
+        "id": "f9",
+        "label": "F9"
+      },
+      {
+        "group": "seg4",
+        "id": "f10",
+        "label": "F10"
+      },
+      {
+        "group": "seg4",
+        "id": "f11",
+        "label": "F11"
+      },
+      {
+        "group": "seg4",
+        "id": "f12",
+        "label": "F12"
+      }
+    ],
+    "seg5": [
+      {
+        "group": "seg5",
+        "id": "prntscr",
+        "label": "Print Screen"
+      },
+      {
+        "group": "seg5",
+        "id": "scrollLock",
+        "label": "Scroll Lock"
+      },
+      {
+        "id": "pauseBreak",
+        "label": "Pause Break"
+      }
+    ]
+  },
+  "alphanumeric": {
+    "seg1": [
+      [{ "id": "tilde", "label": "~" }, { "id": "aposhptrophe", "label": "`" }],
+      [{ "label": 1 }, { "label": "!" }],
+      [{ "label": 2 }, { "label": "@" }],
+      [{ "label": 3 }, { "label": "#" }],
+      [{ "label": 4 }, { "label": "$" }],
+      [{ "label": 5 }, { "label": "%" }],
+      [{ "label": 6 }, { "label": "^" }],
+      [{ "label": 7 }, { "label": "&" }],
+      [{ "label": 8 }, { "label": "*" }],
+      [{ "label": 9 }, { "label": "(" }],
+      [{ "label": 0 }, { "label": ")" }],
+      [{ "label": "-" }, { "label": "_" }],
+      [{ "label": "=" }, { "label": "+" }],
+      {
+        "label": "Backspace"
+      }
+    ],
+    "seg2": [
+      { "label": "Tab" },
+      { "label": "Q" },
+      { "label": "W" },
+      { "label": "E" },
+      { "label": "R" },
+      {
+        "label": "T"
+      },
+      { "label": "Y" },
+      { "label": "U" },
+      { "label": "I" },
+      { "label": "O" },
+      { "label": "P" },
+      { "label": "{" },
+      { "label": "}" },
+      [{ "label": "\\" }, { "label": "|" }]
+    ],
+    "seg3": [
+      { "label": "Caps Lock" },
+      { "label": "A" },
+      { "label": "S" },
+      { "label": "D" },
+      { "label": "E" },
+      { "label": "F" },
+      { "label": "G" },
+      { "label": "H" },
+      { "label": "I" },
+      { "label": "J" },
+      { "label": "K" },
+      { "label": "L" },
+      [{ "label": ";" }, { "label": ":" }],
+      [{ "label": "'" }, { "label": "\"" }],
+      { "label": "Enter" }
+    ],
+    "seg4": [
+      { "label": "Shift" },
+      { "label": "Z" },
+      { "label": "X" },
+      { "label": "C" },
+      { "label": "V" },
+      { "label": "B" },
+      { "label": "N" },
+      { "label": "M" },
+      [{ "label": "," }, { "label": "<" }],
+      [{ "label": "." }, { "label": ">" }],
+      [{ "label": "/" }, { "label": "?" }],
+      { "label": "Enter" }
+    ],
+    "seg5": [
+      { "label": "ctrl" },
+      { "label": "Home" },
+      { "label": "Alt" },
+      { "label": "Space" },
+      { "label": "Alt" },
+      { "label": "Super" },
+      { "label": "Right" },
+      { "label": "ctrl " }
+    ]
+  },
+  "controlPad": {
+    "seg1": [
+      { "label": "insert" },
+      { "label": "Home" },
+      { "label": "Page Up" }
+    ],
+    "seg2": [
+      { "label": "Delete" },
+      { "label": "End" },
+      { "label": "Page Down" }
+    ]
+  },
+  "arrowPad": {
+    "seg1": [{ "label": "UP" }],
+    "seg2": [{ "label": "Left" }, { "label": "Down" }, { "label": "Right" }]
+  },
+  "numPad": {
+    "seg1": [
+      { "label": "Num Lock" },
+      { "label": "/" },
+      { "label": "*" },
+      { "label": "-" }
+    ],
+    "seg2": [{ "label": 7 }, { "label": 8 }, { "label": 9 }, { "label": "+" }],
+    "seg3": [{ "label": 4 }, { "label": 5 }, { "label": 6 }],
+    "seg4": [{ "label": 1 }, { "label": 2 }, { "label": 3 }],
+    "seg5": [{ "label": 0 }, { "label": "." }, { "label": "Enter" }]
+  }
+}
