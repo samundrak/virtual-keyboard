@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.div`
+  padding: 10%;
   background: #2f2a2a;
   color: white;
-  line-height: 50px;
   text-overflow: clip;
   max-height: inherit;
   border-radius: 10px;
   cursor: pointer;
 `;
 
-const makeCustomStyles = props => {
+const makeCustomStyles = (props) => {
   const style = {};
   if (props.rowSpan) {
     style.gridRow = `span ${props.rowSpan}`;

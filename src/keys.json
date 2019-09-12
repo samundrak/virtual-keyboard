@@ -106,11 +106,12 @@
       [{ "label": "-" }, { "label": "_" }],
       [{ "label": "=" }, { "label": "+" }],
       {
-        "label": "Backspace"
+        "label": "Backspace",
+        "colSpan": 2
       }
     ],
     "seg2": [
-      { "label": "Tab" },
+      { "label": "Tab", "colSpan": 1 },
       { "label": "Q" },
       { "label": "W" },
       { "label": "E" },
@@ -128,7 +129,7 @@
       [{ "label": "\\" }, { "label": "|" }]
     ],
     "seg3": [
-      { "label": "Caps Lock" },
+      { "label": "Caps Lock", "colSpan": 2 },
       { "label": "A" },
       { "label": "S" },
       { "label": "D" },
@@ -142,10 +143,10 @@
       { "label": "L" },
       [{ "label": ";" }, { "label": ":" }],
       [{ "label": "'" }, { "label": "\"" }],
-      { "label": "Enter" }
+      { "label": "Enter", "colSpan": 3 }
     ],
     "seg4": [
-      { "label": "Shift" },
+      { "label": "Shift", "colSpan": 3 },
       { "label": "Z" },
       { "label": "X" },
       { "label": "C" },
@@ -156,13 +157,13 @@
       [{ "label": "," }, { "label": "<" }],
       [{ "label": "." }, { "label": ">" }],
       [{ "label": "/" }, { "label": "?" }],
-      { "label": "Enter" }
+      { "label": "Shift", "colSpan": 3 }
     ],
     "seg5": [
       { "label": "ctrl" },
       { "label": "Home" },
       { "label": "Alt" },
-      { "label": "Space" },
+      { "label": "Space", "colSpan": 4 },
       { "label": "Alt" },
       { "label": "Super" },
       { "label": "Right" },
@@ -182,8 +183,8 @@
     ]
   },
   "arrowPad": {
-    "seg1": [{ "label": "UP" }],
-    "seg2": [{ "label": "Left" }, { "label": "Down" }, { "label": "Right" }]
+    "seg1": [{ "label": "Up" }],
+    "seg2": [{ "label": "<-" }, { "label": "Down" }, { "label": "->" }]
   },
   "numPad": {
     "seg1": [
