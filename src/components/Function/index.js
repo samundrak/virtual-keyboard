@@ -20,13 +20,13 @@ const GridItem = styled.div`
   grid-auto-flow: column;
   grid-row-gap: 2px;
 `;
-const Function = ({ keys }) => {
+const Function = ({ keys, handleKeyPress }) => {
   return (
     <KeyRow>
       {Object.keys(keys).map(key => (
         <GridItem area={key} key={key}>
           {keys[key].map(item => (
-            <Key label={item.label} key={item.id} id={item.id} />
+            <Key handleKeyPress={handleKeyPress} label={item.label} key={item.id} id={item.id} />
           ))}
         </GridItem>
       ))}

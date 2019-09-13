@@ -1,12 +1,10 @@
 import React from 'react';
 import Key from '../Key';
 
-const Multikey = ({ keys, isSuper = false }) => {
-  const key = isSuper ? keys[1] : keys[0];
+const Multikey = ({ keys, handleKeyPress, state }) => {
+  const key = state.isShift ? keys[1] : keys[0];
   return (
-    <React.Fragment>
-      <Key {...key} id={key.id || key.label} />
-    </React.Fragment>
+    <Key handleKeyPress={handleKeyPress} state={state} {...key} id={key.id || key.label} />
   );
 };
 export default Multikey;

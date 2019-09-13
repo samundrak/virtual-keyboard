@@ -2,15 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledScreen = styled.div`
-background: #464643;
-color:white;
+  background: #464643;
+  max-height: 200px;
+  min-height:200px;
+  color:white;
   border: 1px dashed black;
-  padding: 5%;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 20px;
 `;
-const Screen = () => {
-  return <StyledScreen>Hi I am screen</StyledScreen>;
+const Screen = ({ text }) => {
+  return <StyledScreen>{text}</StyledScreen>;
 };
 
 export default Screen;

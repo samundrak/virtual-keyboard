@@ -16,17 +16,17 @@ grid-template-rows: repeat(4, 1.5fr) 1fr;
   display: grid;
   grid-template-columns: repeat(3, 1fr) 1fr;
 `;
-const Numpad = ({ keys }) => {
+const Numpad = ({ keys, handleKeyPress }) => {
   return (
     <Wrapper>
       {Object.keys(keys).map((key) => (
         <GridRow key={key}>
           {keys[key].map((item, index) =>
             Array.isArray(item) ? (
-              <Multikey key={index} keys={item} />
+              <Multikey handleKeyPress={handleKeyPress} key={index} keys={item} />
             ) : (
-              <Key {...item} id={item.id || item.label} key={index} />
-            )
+                <Key handleKeyPress={handleKeyPress} {...item} id={item.id || item.label} key={index} />
+              )
           )}
         </GridRow>
       ))}

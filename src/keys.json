@@ -3,208 +3,222 @@
     "seg1": [
       {
         "id": "esc",
-        "label": "Esc",
-        "group": "seg1"
+        "code": 27,
+        "label": "Esc"
       }
     ],
     "seg2": [
       {
-        "group": "seg2",
         "id": "f1",
-        "label": "F1"
+        "label": "F1",
+        "code": 112
       },
       {
-        "group": "seg2",
         "id": "f2",
-        "label": "F2"
+        "label": "F2",
+        "code": 113
       },
       {
-        "group": "seg2",
         "id": "f3",
-        "label": "F3"
+        "label": "F3",
+        "code": 114
       },
       {
-        "group": "seg2",
         "id": "f4",
-        "label": "F4"
+        "label": "F4",
+        "code": 115
       }
     ],
     "seg3": [
       {
-        "group": "seg3",
         "id": "f5",
-        "label": "F5"
+        "label": "F5",
+        "code": 116
       },
       {
-        "group": "seg3",
         "id": "f6",
-        "label": "F6"
+        "label": "F6",
+        "code": 117
       },
       {
-        "group": "seg3",
         "id": "f7",
-        "label": "F7"
+        "label": "F7",
+        "code": 118
       },
       {
-        "group": "seg3",
         "id": "f8",
-        "label": "F8"
+        "label": "F8",
+        "code": 119
       }
     ],
     "seg4": [
       {
-        "group": "seg4",
+        "code": 120,
         "id": "f9",
         "label": "F9"
       },
       {
-        "group": "seg4",
+        "code": 121,
         "id": "f10",
         "label": "F10"
       },
       {
-        "group": "seg4",
+        "code": 122,
         "id": "f11",
         "label": "F11"
       },
       {
-        "group": "seg4",
+        "code": 123,
         "id": "f12",
         "label": "F12"
       }
     ],
     "seg5": [
       {
-        "group": "seg5",
+        "code": 44,
         "id": "prntscr",
         "label": "Print Screen"
       },
       {
-        "group": "seg5",
         "id": "scrollLock",
+        "code": 145,
         "label": "Scroll Lock"
       },
       {
         "id": "pauseBreak",
+        "code": 19,
         "label": "Pause Break"
       }
     ]
   },
   "alphanumeric": {
     "seg1": [
-      [{ "id": "tilde", "label": "~" }, { "id": "aposhptrophe", "label": "`" }],
-      [{ "label": 1 }, { "label": "!" }],
-      [{ "label": 2 }, { "label": "@" }],
-      [{ "label": 3 }, { "label": "#" }],
-      [{ "label": 4 }, { "label": "$" }],
-      [{ "label": 5 }, { "label": "%" }],
-      [{ "label": 6 }, { "label": "^" }],
-      [{ "label": 7 }, { "label": "&" }],
-      [{ "label": 8 }, { "label": "*" }],
-      [{ "label": 9 }, { "label": "(" }],
-      [{ "label": 0 }, { "label": ")" }],
-      [{ "label": "-" }, { "label": "_" }],
-      [{ "label": "=" }, { "label": "+" }],
+      [
+        {
+          "id": "tilde",
+
+          "code": 192,
+          "label": "~"
+        },
+        { "id": "aposhptrophe", "label": "`", "code": 223 }
+      ],
+      [{ "label": 1, "code": 49 }, { "label": "!", "code": 161 }],
+      [{ "label": 2, "code": 50 }, { "label": "@", "code": null }],
+      [{ "label": 3, "code": 51 }, { "label": "#", "code": null }],
+      [{ "label": 4, "code": 52 }, { "label": "$", "code": 164 }],
+      [{ "label": 5, "code": 53 }, { "label": "%", "code": null }],
+      [{ "label": 6, "code": 54 }, { "label": "^", "code": null }],
+      [{ "label": 7, "code": 55 }, { "label": "&", "code": null }],
+      [{ "label": 8, "code": 56 }, { "label": "*", "code": null }],
+      [{ "label": 9, "code": 57 }, { "label": "(", "code": null }],
+      [{ "label": 0, "code": 47 }, { "label": ")", "code": null }],
+      [{ "label": "-", "code": null }, { "label": "_", "code": null }],
+      [{ "label": "=", "code": null }, { "label": "+", "code": null }],
       {
         "label": "Backspace",
-        "colSpan": 2
+        "colSpan": 2,
+        "code": null,
+        "printable": false
       }
     ],
     "seg2": [
-      { "label": "Tab", "colSpan": 1 },
-      { "label": "Q" },
-      { "label": "W" },
-      { "label": "E" },
-      { "label": "R" },
+      { "label": "Tab", "colSpan": 1, "code": null, "printable": false },
+      { "label": "Q", "code": 81 },
+      { "label": "W", "code": 87 },
+      { "label": "E", "code": 69 },
+      { "label": "R", "code": 82 },
       {
-        "label": "T"
+        "label": "T",
+        "code": 84
       },
-      { "label": "Y" },
-      { "label": "U" },
-      { "label": "I" },
-      { "label": "O" },
-      { "label": "P" },
-      { "label": "{" },
-      { "label": "}" },
-      [{ "label": "\\" }, { "label": "|" }]
+      { "label": "Y", "code": 89 },
+      { "label": "U", "code": 85 },
+      { "label": "I", "code": 73 },
+      { "label": "O", "code": 79 },
+      { "label": "P", "code": 80 },
+      { "label": "{", "code": 279 },
+      { "label": "}", "code": 221 },
+      [{ "label": "\\", "code": 220 }, { "label": "|", "code": null }]
     ],
     "seg3": [
-      { "label": "Caps Lock", "colSpan": 2 },
-      { "label": "A" },
-      { "label": "S" },
-      { "label": "D" },
-      { "label": "E" },
-      { "label": "F" },
-      { "label": "G" },
-      { "label": "H" },
-      { "label": "I" },
-      { "label": "J" },
-      { "label": "K" },
-      { "label": "L" },
-      [{ "label": ";" }, { "label": ":" }],
-      [{ "label": "'" }, { "label": "\"" }],
-      { "label": "Enter", "colSpan": 3 }
+      { "label": "Caps Lock", "colSpan": 2, "code": 20, "printable": false },
+      { "label": "A", "code": 65 },
+      { "label": "S", "code": 83 },
+      { "label": "D", "code": 68 },
+      { "label": "F", "code": 70 },
+      { "label": "G", "code": 71 },
+      { "label": "H", "code": 72 },
+      { "label": "J", "code": 74 },
+      { "label": "K", "code": 75 },
+      { "label": "L", "code": 76 },
+      [{ "label": ";", "code": 186 }, { "label": ":", "code": null }],
+      [{ "label": "'", "code": 222 }, { "label": "\"", "code": null }],
+      { "label": "Enter", "colSpan": 3, "code": 13, "printable": false }
     ],
     "seg4": [
-      { "label": "Shift", "colSpan": 3 },
-      { "label": "Z" },
-      { "label": "X" },
-      { "label": "C" },
-      { "label": "V" },
-      { "label": "B" },
-      { "label": "N" },
-      { "label": "M" },
-      [{ "label": "," }, { "label": "<" }],
-      [{ "label": "." }, { "label": ">" }],
-      [{ "label": "/" }, { "label": "?" }],
-      { "label": "Shift", "colSpan": 3 }
+      { "label": "Shift", "colSpan": 3, "code": 16, "printable": false },
+      { "label": "Z", "code": 90 },
+      { "label": "X", "code": 88 },
+      { "label": "C", "code": 67 },
+      { "label": "V", "code": 86 },
+      { "label": "B", "code": 66 },
+      { "label": "N", "code": 78 },
+      { "label": "M", "code": 77 },
+      [{ "label": ",", "code": 188 }, { "label": "<", "code": null }],
+      [{ "label": ".", "code": 190 }, { "label": ">", "code": null }],
+      [{ "label": "/", "code": 191 }, { "label": "?", "code": null }],
+      { "label": "Shift", "colSpan": 3, "code": 16, "printable": false }
     ],
     "seg5": [
-      { "label": "ctrl" },
-      { "label": "Home" },
-      { "label": "Alt" },
-      { "label": "Space", "colSpan": 4 },
-      { "label": "Alt" },
-      { "label": "Super" },
-      { "label": "Right" },
-      { "label": "ctrl " }
+      { "label": "ctrl", "code": 17 },
+      { "label": "Home", "code": 91 },
+      { "label": "Alt", "code": 18 },
+      { "label": "Space", "colSpan": 4, "code": 32, "printable": false },
+      { "label": "Alt", "code": 18 },
+      { "label": "Super", "code": 92 },
+      { "label": "Right", "code": 93 },
+      { "label": "ctrl ", "code": 17 }
     ]
   },
   "controlPad": {
     "seg1": [
-      { "label": "insert" },
-      { "label": "Home" },
-      { "label": "Page Up" }
+      { "label": "insert", "code": 45 },
+      { "label": "Home", "code": 36 },
+      { "label": "Page Up", "code": 33 }
     ],
     "seg2": [
-      { "label": "Delete" },
-      { "label": "End" },
-      { "label": "Page Down" }
+      { "label": "Delete", "code": 46 },
+      { "label": "End", "code": 35 },
+      { "label": "Page Down", "code": 34 }
     ]
   },
   "arrowPad": {
-    "seg1": [{ "label": "Up", "columnStart": 2 }],
-    "seg2": [{ "label": "<-" }, { "label": "Down" }, { "label": "->" }]
+    "seg1": [{ "label": "Up", "columnStart": 2, "code": 38 }],
+    "seg2": [
+      { "label": "<-", "code": 37 },
+      { "label": "Down", "code": 40 },
+      { "label": "->", "code": 30 }
+    ]
   },
   "numPad": {
     "seg1": [
-      { "label": "Num Lock" },
-      { "label": "/" },
-      { "label": "*" },
-      { "label": "-" },
-      { "label": 7 },
-      { "label": 8 },
-      { "label": 9 },
-      { "label": "+", "rowSpan": 2 },
-      { "label": 4 },
-      { "label": 5 },
-      { "label": 6 },
-      { "label": 1 },
-      { "label": 2 },
-      { "label": 3 },
-      { "label": "Enter", "rowSpan": 2 },
-      { "label": 0, "colSpan": 2 },
-      { "label": "." }
+      { "label": "Num Lock", "code": 144, "printable": false },
+      { "label": "/", "code": 111 },
+      { "label": "*", "code": 106 },
+      { "label": "-", "code": 109 },
+      { "label": 7, "code": 103 },
+      { "label": 8, "code": 104 },
+      { "label": 9, "code": 105 },
+      { "label": "+", "rowSpan": 2, "code": 107 },
+      { "label": 4, "code": 100 },
+      { "label": 5, "code": 101 },
+      { "label": 6, "code": 102 },
+      { "label": 1, "code": 97 },
+      { "label": 2, "code": 98 },
+      { "label": 3, "code": 99 },
+      { "label": "Enter", "rowSpan": 2, "code": 13, "printable": false },
+      { "label": 0, "colSpan": 2, "code": 96 },
+      { "label": ".", "code": 110 }
     ]
   }
 }

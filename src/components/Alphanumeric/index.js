@@ -16,17 +16,17 @@ const GridRow = styled.div`
   grid-template-columns: repeat(1f);
   grid-template-rows: repeat(1f);
 `;
-const Alphanumeric = ({ keys }) => {
+const Alphanumeric = ({ state, keys, handleKeyPress }) => {
   return (
     <Wrapper>
       {Object.keys(keys).map((key) => (
         <GridRow key={key}>
           {keys[key].map((item, index) =>
             Array.isArray(item) ? (
-              <Multikey key={index} keys={item} />
+              <Multikey state={state} handleKeyPress={handleKeyPress} key={index} keys={item} />
             ) : (
-              <Key {...item} id={item.id || item.label} key={index} />
-            )
+                <Key state={state} handleKeyPress={handleKeyPress} {...item} id={item.id || item.label} key={index} />
+              )
           )}
         </GridRow>
       ))}

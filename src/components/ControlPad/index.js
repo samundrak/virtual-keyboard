@@ -15,17 +15,17 @@ const GridRow = styled.div`
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
 `;
-const ControlPad = ({ keys }) => {
+const ControlPad = ({ keys, handleKeyPress }) => {
   return (
     <Wrapper>
       {Object.keys(keys).map(key => (
         <GridRow key={key}>
           {keys[key].map((item, index) =>
             Array.isArray(item) ? (
-              <Multikey key={index} keys={item} />
+              <Multikey handleKeyPress={handleKeyPress} key={index} keys={item} />
             ) : (
-              <Key id={item.id || item.label} label={item.label} key={index} />
-            ),
+                <Key handleKeyPress={handleKeyPress} id={item.id || item.label} label={item.label} key={index} />
+              ),
           )}
         </GridRow>
       ))}

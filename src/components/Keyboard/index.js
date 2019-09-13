@@ -6,9 +6,10 @@ import Alphanumeric from '../Alphanumeric';
 import ControlPad from '../ControlPad';
 import NumPad from '../Numpad';
 import keys from '../../keys.json';
+import KeyIndicator from '../KeyIndicator';
 
 const Grid = styled.div`
-  background: #444441;
+  background: #c1c1b3;
   display: grid;
   border: 1px solid;
   border-radius: 10px;
@@ -16,31 +17,35 @@ const Grid = styled.div`
   border-bottom-right-radius: 20px;
   grid-template-columns: 70% 15% 15%;
   grid-template-areas:
-    'function function function'
-    'alphanumeric controlpad numpad'
-    'alphanumeric arrowpad numpad';
+    'function function light light'
+    'alphanumeric controlpad numpad numpad'
+    'alphanumeric arrowpad numpad numpad';
 `;
 const GridItem = styled.div`
   grid-area: ${props => props.area};
 `;
 
-const Keyboard = () => {
+
+const Keyboard = ({ state, handleKeyPress }) => {
   return (
     <Grid>
+      <GridItem area="light">
+        <KeyIndicator state={state} />
+      </GridItem>
       <GridItem area="function">
-        <Function keys={keys.fn} />
+        <Function state={state} keys={keys.fn} handleKeyPress={handleKeyPress('function')} />
       </GridItem>
       <GridItem area="controlpad">
-        <ControlPad keys={keys.controlPad} />
+        <ControlPad state={state} keys={keys.controlPad} handleKeyPress={handleKeyPress('controlpad')} />
       </GridItem>
       <GridItem area="numpad">
-        <NumPad keys={keys.numPad} />
+        <NumPad state={state} keys={keys.numPad} handleKeyPress={handleKeyPress('numpad')} />
       </GridItem>
       <GridItem area="arrowpad">
-        <ArrowPad keys={keys.arrowPad} />
+        <ArrowPad state={state} keys={keys.arrowPad} handleKeyPress={handleKeyPress('arrowpad')} />
       </GridItem>
       <GridItem area="alphanumeric">
-        <Alphanumeric keys={keys.alphanumeric} />
+        <Alphanumeric state={state} keys={keys.alphanumeric} handleKeyPress={handleKeyPress('alphanumeric')} />
       </GridItem>
     </Grid>
   );

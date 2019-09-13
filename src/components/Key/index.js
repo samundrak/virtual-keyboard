@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = styled.div`
+const Button = styled.button`
   padding: 10%;
   background: #2f2a2a;
   color: white;
@@ -17,6 +17,12 @@ const Button = styled.div`
   }
 `;
 const Mask = styled.div`
+width: 50%;
+height: 5px;
+background: ${props => props.glow ? 'green' : 'grey'};
+border-radius: 2px;
+margin-left: 25%;
+box-shadow:  ${props => props.glow ? '2px 2px 18px 3px green' : ''};
 `;
 const Char = styled.div`
 `;
@@ -35,10 +41,17 @@ const makeCustomStyles = (props) => {
   }
   return style;
 };
-const Key = ({ id, label, ...rest }) => {
-  return <Button role="button" style={makeCustomStyles(rest)}>
-  <Mask />
-  <Char>{label}</Char>
+const Key = ({
+  indicator, disabled,
+  glow,
+  state, handleKeyPress, id, label, ...rest }) => {
+  return <Button
+    disabled={disabled}
+    onClick={handleKeyPress && handleKeyPress({ id, label, ...rest })} role="button" style={makeCustomStyles(rest)}>
+    <Char>{label}</Char>
+    {indicator &&
+      <Mask glow={glow} />
+    }
   </Button>;
 };
 export default Key;
