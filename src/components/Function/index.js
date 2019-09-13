@@ -9,13 +9,16 @@ const KeyRow = styled.div`
   grid-column-gap: 5%;
   grid-template-areas: 'seg1 seg2 seg3 seg4 seg5';
   padding: 10px;
+  grid-row-gap: 2px;
+
 `;
 
 const GridItem = styled.div`
   grid-area: ${props => props.area};
   display: grid;
-  grid-column-gap: 1px;
+  grid-column-gap: 2px;
   grid-auto-flow: column;
+  grid-row-gap: 2px;
 `;
 const Function = ({ keys }) => {
   return (

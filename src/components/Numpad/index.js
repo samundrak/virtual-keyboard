@@ -7,13 +7,14 @@ const Wrapper = styled.div`
   display: grid;
   grid-auto-flow: row;
   padding: 10px;
-  grid-row-gap: 1px;
+  grid-row-gap: 5px;
 `;
 const GridRow = styled.div`
+grid-template-rows: repeat(4, 1.5fr) 1fr;
   grid-column-gap: 1px;
+  grid-row-gap:5px;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr) 1fr;
 `;
 const Numpad = ({ keys }) => {
   return (

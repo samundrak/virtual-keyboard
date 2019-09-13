@@ -8,13 +8,13 @@ import NumPad from '../Numpad';
 import keys from '../../keys.json';
 
 const Grid = styled.div`
-  background: beige;
+  background: #444441;
   display: grid;
   border: 1px solid;
   border-radius: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  grid-template-columns: 60% 15% 25%;
+  grid-template-columns: 70% 15% 15%;
   grid-template-areas:
     'function function function'
     'alphanumeric controlpad numpad'

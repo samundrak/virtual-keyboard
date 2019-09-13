@@ -7,13 +7,14 @@ const Wrapper = styled.div`
   display: grid;
   grid-auto-flow: row;
   padding: 10px;
-  grid-row-gap: 1px;
+  grid-row-gap: 5px;
 `;
 const GridRow = styled.div`
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 1px;
   grid-template-columns: repeat(1f);
+  grid-template-rows: repeat(1f);
 `;
 const Alphanumeric = ({ keys }) => {
   return (

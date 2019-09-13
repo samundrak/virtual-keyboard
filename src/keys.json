@@ -191,15 +191,20 @@
       { "label": "Num Lock" },
       { "label": "/" },
       { "label": "*" },
-      { "label": "-" }
-    ],
-    "seg2": [{ "label": 7 }, { "label": 8 }, { "label": 9 }, { "label": "+" }],
-    "seg3": [{ "label": 4 }, { "label": 5 }, { "label": 6 }],
-    "seg4": [{ "label": 1 }, { "label": 2 }, { "label": 3 }],
-    "seg5": [
+      { "label": "-" },
+      { "label": 7 },
+      { "label": 8 },
+      { "label": 9 },
+      { "label": "+", "rowSpan": 2 },
+      { "label": 4 },
+      { "label": 5 },
+      { "label": 6 },
+      { "label": 1 },
+      { "label": 2 },
+      { "label": 3 },
+      { "label": "Enter", "rowSpan": 2 },
       { "label": 0, "colSpan": 2 },
-      { "label": "." },
-      { "label": "Enter" }
+      { "label": "." }
     ]
   }
 }

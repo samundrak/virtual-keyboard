@@ -5,14 +5,24 @@ const Button = styled.div`
   padding: 10%;
   background: #2f2a2a;
   color: white;
-  text-overflow: clip;
-  max-height: inherit;
   border-radius: 10px;
   cursor: pointer;
+  text-shadow:1px 1px 1px #b6b6ff;
+  box-shadow: 1px 3px #888888;
+
+  &:hover {
+    box-shadow: 4px 8px #888888;
+    text-shadow: 2px 1px 1px #b6b6ff;
+
+  }
+`;
+const Mask = styled.div`
+`;
+const Char = styled.div`
 `;
 
+
 const makeCustomStyles = (props) => {
-  console.log(props);
   const style = {};
   if (props.rowSpan) {
     style.gridRow = `span ${props.rowSpan}`;
@@ -26,6 +36,9 @@ const makeCustomStyles = (props) => {
   return style;
 };
 const Key = ({ id, label, ...rest }) => {
-  return <Button style={makeCustomStyles(rest)}>{label}</Button>;
+  return <Button role="button" style={makeCustomStyles(rest)}>
+  <Mask />
+  <Char>{label}</Char>
+  </Button>;
 };
 export default Key;
