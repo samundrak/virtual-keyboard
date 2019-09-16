@@ -182,7 +182,7 @@
   },
   "controlPad": {
     "seg1": [
-      { "label": "insert", "code": 45 },
+      { "label": "Insert", "code": 45 },
       { "label": "Home", "code": 36 },
       { "label": "Page Up", "code": 33 }
     ],
